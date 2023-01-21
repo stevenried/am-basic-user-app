@@ -4,8 +4,8 @@ import NewUser from './Components/NewUser/NewUser'
 import UserList from './Components/Users/UserList'
 
 const DUMMY_USERS = [
-  { name: 'Steven', id: 1 },
-  { name: 'Rebecca', id: 2 },
+  { id: 1, name: 'Steven', age: 45 },
+  { id: 2, name: 'Rebecca', age: 39 },
 ]
 
 function App() {

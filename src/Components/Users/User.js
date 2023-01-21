@@ -1,9 +1,11 @@
 import React from 'react'
 
-function User({ name }) {
+function User({ name, age }) {
   return (
     <li>
-      <output>{name}</output>
+      <output>
+        {name} ({age} years old)
+      </output>
     </li>
   )
 }

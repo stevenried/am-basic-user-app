@@ -1,13 +1,18 @@
 import React from 'react'
 import User from './User'
+import Card from '../UI/Card'
+
+import styles from './UserList.module.css'
 
 function UserList({ users }) {
   return (
-    <ul>
-      {users.map((user) => (
-        <User key={user.id} name={user.name} />
-      ))}
-    </ul>
+    <Card className={styles.users}>
+      <ul>
+        {users.map((user) => (
+          <User key={user.id} name={user.name} age={user.age} />
+        ))}
+      </ul>
+    </Card>
   )
 }
 
